@@ -13,7 +13,7 @@ function checkReservation() {
       outputElement.textContent = `Welcome, ${name}`;
       reservations[name].claimed = true; // Optionally mark as claimed
     } else {
-      outputElement.textContent = "Someone already claimed this reservation";
+      outputElement.textContent = "Hmm, someone already claimed this reservation";
     }
   } else {
     outputElement.textContent = "You have no reservation";
