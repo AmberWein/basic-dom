@@ -41,8 +41,14 @@ function validate() {
       p.textContent = err;
       errorsDiv.appendChild(p);
     });
-  } else {
-    errorsDiv.style.color = "green";
-    errorsDiv.textContent = "Form submitted successfully!";
+  }else {
+    // hide the form
+    document.getElementById("form-container").style.display = "none";
+    document.getElementById("signupForm").reset();
+
+    // show welcome message
+    const welcomeDiv = document.getElementById("welcome-message");
+    welcomeDiv.style.display = "block";
+    welcomeDiv.textContent = `Welcome, ${name}!`;
   }
 }
