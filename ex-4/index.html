@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple signup Form</title>
+</head>
+<body>
+  <h2>Signup form</h2>
+
+  <form id="signupForm" onsubmit="validate(event)">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" /><br /><br />
+
+    <label for="salary">Salary:</label><br />
+    <input type="number" id="salary" /><br /><br />
+
+    <label for="birthday">Birthday:</label><br />
+    <input type="date" id="birthday" /><br /><br />
+
+    <label for="phone">Phone:</label><br />
+    <input type="text" id="phone" /><br /><br />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="errors"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
